@@ -14,4 +14,4 @@ Every step works with no key. Use the MCP tools at `https://fileclerk.co.uk/mcp`
 5. For a company that is not formed yet, call `calculate_deadlines` with its type and incorporation date.
 6. To check an iXBRL document before filing, call `validate_accounts` with the XHTML text. Report the rejections and risks with their rules.
 
-FileClerk is independent of Companies House and HMRC. A validation report does not submit a filing. More: [llms.txt](https://fileclerk.co.uk/llms.txt) and the [API documentation](https://fileclerk.co.uk/docs/api).
+FileClerk is independent of Companies House and HMRC. A validation report does not submit a filing. FileClerk's deadlines, tax figures and checks are general information, not professional tax, accounting or legal advice. More: [llms.txt](https://fileclerk.co.uk/llms.txt) and the [API documentation](https://fileclerk.co.uk/docs/api).

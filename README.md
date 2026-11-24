@@ -38,6 +38,12 @@ Add `https://fileclerk.co.uk/mcp` as a remote MCP server in your client. In Clau
 claude mcp add --transport http fileclerk https://fileclerk.co.uk/mcp
 ```
 
+## Not advice
+
+FileClerk gives general information from the public registers and the published rules of Companies House and
+HMRC. Its deadlines, tax figures and checks are not professional tax, accounting or legal advice. FileClerk is
+independent of Companies House and HMRC.
+
 ## Access and limits
 
 No account is needed. Each tool works with no key, at 60 lookups an hour for one address. A free FileClerk API key
