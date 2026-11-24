@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "fileclerk": {
+      "type": "http",
+      "url": "https://fileclerk.co.uk/mcp"
+    }
+  }
+}

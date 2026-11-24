@@ -1,0 +1,33 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "uk.co.fileclerk/filing-tools",
+  "title": "FileClerk",
+  "description": "UK company filing deadlines, filed figures and iXBRL validation",
+  "version": "0.2.2",
+  "websiteUrl": "https://fileclerk.co.uk",
+  "repository": {
+    "url": "https://github.com/fileclerk-uk/fileclerk-plugin",
+    "source": "github"
+  },
+  "icons": [
+    {
+      "src": "https://fileclerk.co.uk/fileclerk-logo.png",
+      "mimeType": "image/png",
+      "sizes": ["512x512"]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://fileclerk.co.uk/mcp",
+      "headers": [
+        {
+          "name": "x-api-key",
+          "description": "Optional. Every tool at this address works with no key at 60 lookups per hour. A free FileClerk API key raises that to 1,000 per hour.",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

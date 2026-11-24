@@ -1,0 +1,15 @@
+{
+  "name": "fileclerk",
+  "version": "0.2.2",
+  "description": "UK company filing deadlines, filed figures, tax calculators and iXBRL checks from the public registers.",
+  "author": {
+    "name": "FileClerk",
+    "email": "support@fileclerk.co.uk",
+    "url": "https://fileclerk.co.uk"
+  },
+  "homepage": "https://fileclerk.co.uk/developers/mcp",
+  "repository": "https://github.com/fileclerk-uk/fileclerk-plugin",
+  "privacyPolicyUrl": "https://fileclerk.co.uk/legal/privacy",
+  "license": "MIT",
+  "keywords": ["companies-house", "uk", "filing-deadlines", "corporation-tax", "ixbrl", "accounts"]
+}
