@@ -1,5 +1,6 @@
 {
   "name": "fileclerk",
+  "displayName": "FileClerk",
   "version": "0.2.2",
   "description": "UK company filing deadlines, filed figures, tax calculators and iXBRL checks from the public registers.",
   "author": {
@@ -7,7 +8,10 @@
     "email": "support@fileclerk.co.uk",
     "url": "https://fileclerk.co.uk"
   },
-  "homepage": "https://fileclerk.co.uk/developers/mcp",
+  "homepage": "https://fileclerk.co.uk",
+  "documentationUrl": "https://fileclerk.co.uk/developers/mcp",
+  "supportUrl": "https://fileclerk.co.uk/help",
+  "termsOfServiceUrl": "https://fileclerk.co.uk/legal/terms",
   "repository": "https://github.com/fileclerk-uk/fileclerk-plugin",
   "privacyPolicyUrl": "https://fileclerk.co.uk/legal/privacy",
   "license": "MIT",
