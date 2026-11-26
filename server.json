@@ -3,7 +3,7 @@
   "name": "uk.co.fileclerk/filing-tools",
   "title": "FileClerk",
   "description": "UK company filing deadlines, filed figures and iXBRL validation",
-  "version": "0.2.2",
+  "version": "0.2.48",
   "websiteUrl": "https://fileclerk.co.uk",
   "repository": {
     "url": "https://github.com/fileclerk-uk/fileclerk-plugin",

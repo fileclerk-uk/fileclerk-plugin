@@ -9,14 +9,19 @@ skill, one command, and the entry of the server in the MCP registry. The server 
 
 ## What it gives an assistant
 
-- The MCP server `fileclerk` (Streamable HTTP, `https://fileclerk.co.uk/mcp`) with 20 tools:
+- The MCP server `fileclerk` (Streamable HTTP, `https://fileclerk.co.uk/mcp`) with its public tools:
   - register lookups: a company by name, its filing deadlines, its filed figures, its officers, a list of companies
-    by filters;
+    by filters and the link to that list as a CSV file, and how the companies people looked up filed their last
+    accounts;
   - checks on one company: strike-off, the 2028 software filing rule, every check in one call;
   - calculators: first deadlines from an incorporation date, late filing penalties, Corporation Tax, s455 tax on a
     director's loan, take-home pay, a director's salary and dividends, company size;
-  - before a filing: a check of iXBRL accounts, and a dry run of annual accounts or a CT600. Nothing is filed;
-  - email alerts for a company's deadlines.
+  - before a filing: a check of iXBRL accounts, a dry run of annual accounts, with a PDF of them as they go to
+    Companies House on request, or a CT600, and a community interest company's accounts package (its accounts and
+    CIC34 report in one ZIP to upload at Companies House). Nothing is filed;
+  - email alerts for a company's deadlines;
+  - FileClerk's guides to filing rules and tasks, found by a question, each with its page to cite;
+  - writing to FileClerk: an error report, feedback or a question.
 - The skill `check-company-filings`: how to find a company, read its deadlines and report them.
 - The command `/deadlines <company name or number>`.
 
@@ -53,9 +58,10 @@ in the `x-api-key` header raises that to 1,000 an hour.
 
 <https://fileclerk.co.uk/legal/privacy>
 
-The server gets the inputs of a tool call: a company number or name, the figures for a calculator, or the text of a
-document to check. It does not get the conversation. `follow_companies` stores the email address that the person
-gives, to send deadline alerts, until the person unsubscribes.
+The server gets the inputs of a tool call: a company number or name, the figures for a calculator, the text of a
+document to check or to package, or the words of a guide search. It does not get the conversation. `follow_companies` stores the email address that the person
+gives, to send deadline alerts, until the person unsubscribes. `send_feedback` stores the message, the text and
+company number it names, and the email address when the person gives one, for 12 months, to reply.
 
 ## Data and independence
 
