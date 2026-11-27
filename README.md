@@ -10,9 +10,9 @@ skill, one command, and the entry of the server in the MCP registry. The server 
 ## What it gives an assistant
 
 - The MCP server `fileclerk` (Streamable HTTP, `https://fileclerk.co.uk/mcp`) with its public tools:
-  - register lookups: a company by name, its filing deadlines, its filed figures, its officers, a list of companies
-    by filters and the link to that list as a CSV file, and how the companies people looked up filed their last
-    accounts;
+  - register lookups: a company by name, its filing deadlines and current people with significant control, its filed
+    figures, its officers, a list of companies by filters and the link to that list as a CSV file, and how the
+    companies people looked up filed their last accounts;
   - checks on one company: strike-off, the 2028 software filing rule, every check in one call;
   - calculators: first deadlines from an incorporation date, late filing penalties, Corporation Tax, s455 tax on a
     director's loan, take-home pay, a director's salary and dividends, company size;
