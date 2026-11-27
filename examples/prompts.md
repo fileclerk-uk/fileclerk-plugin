@@ -7,6 +7,7 @@ Each prompt works with no account and no key.
 | When are the accounts of Tesco PLC due? | `search_companies`, `get_company_deadlines` |
 | Who has significant control of company 15557917? | `get_company_deadlines` |
 | What did company 00445790 report in its last accounts? | `get_company_finances` |
+| Which companies does company 14785367 have significant control in, and which companies are like it? | `get_related_companies` |
 | My company was formed on 2 November 2026. What are its first deadlines? | `calculate_deadlines` |
 | What is the Corporation Tax on a profit of £120,000 for the year to 31 March 2026? | `calculate_corporation_tax` |
 | Our accounts were due on 30 September and went in today. What is the penalty? | `calculate_penalty` |
