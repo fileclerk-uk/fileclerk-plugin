@@ -1,7 +1,7 @@
 {
   "name": "fileclerk",
   "displayName": "FileClerk",
-  "version": "0.4.5",
+  "version": "0.5.0",
   "description": "UK company filing deadlines, filed figures, tax calculators and iXBRL checks from the public registers.",
   "author": {
     "name": "FileClerk",

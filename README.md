@@ -9,7 +9,7 @@ skill, one command, and the entry of the server in the MCP registry. The server 
 
 ## What it gives an assistant
 
-- The MCP server `fileclerk` (Streamable HTTP, `https://fileclerk.co.uk/mcp`) with its public tools:
+- The MCP server `fileclerk` (Streamable HTTP, `https://fileclerk.co.uk/mcp`) with its tools:
   - register lookups: a company by name, its filing deadlines and current people with significant control, its filed
     figures, its officers, a list of companies by filters and the link to that list as a CSV file, how the
     companies people looked up filed their last accounts, and, among the companies on FileClerk, companies like it
@@ -52,8 +52,9 @@ independent of Companies House and HMRC.
 
 ## Access and limits
 
-No account is needed. Each tool works with no key, at 60 lookups an hour for one address. A free FileClerk API key
-in the `x-api-key` header raises that to 1,000 an hour.
+Every tool needs a free FileClerk account. Claude Code signs you in with OAuth the first time a tool runs: FileClerk
+asks for your passkey and for your consent. A client without OAuth sends a FileClerk API key in the `x-api-key`
+header instead. The limit is 1,000 lookups an hour per account. Sign up: <https://fileclerk.co.uk/console/sign-in>.
 
 ## Privacy Policy
 

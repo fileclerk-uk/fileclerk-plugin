@@ -5,7 +5,7 @@ description: Check public UK company filing deadlines, inspect filed accounts an
 
 # Check UK company filings
 
-Every step works with no key. Use the MCP tools at `https://fileclerk.co.uk/mcp` (Streamable HTTP) or the REST calls; both give the same answers.
+Every step needs a free FileClerk account: OAuth, or a FileClerk API key as the `x-api-key` header (see https://fileclerk.co.uk/auth.md). Use the MCP tools at `https://fileclerk.co.uk/mcp` (Streamable HTTP) or the REST calls; both give the same answers.
 
 1. Find the company number. With only a name, call `search_companies` with `name`, or request `GET https://fileclerk.co.uk/api/v1/companies/search?q=<name>`. When several companies match, confirm with the user which one they mean before you report dates.
 2. Read the deadlines. Call `get_company_deadlines` with `company_number`, or request `GET https://fileclerk.co.uk/api/v1/companies/{number}/deadlines?view=summary`.

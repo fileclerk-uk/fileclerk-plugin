@@ -1,6 +1,6 @@
 # Example prompts
 
-Each prompt works with no account and no key.
+Each prompt works with a free FileClerk account, signed in once with OAuth.
 
 | Prompt | Tools that answer it |
 |---|---|
