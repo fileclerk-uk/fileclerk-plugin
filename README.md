@@ -26,7 +26,7 @@ skill, one command, and the entry of the server in the MCP registry. The server 
 - The skill `check-company-filings`: how to find a company, read its deadlines and report them.
 - The command `/deadlines <company name or number>`.
 
-Examples: [examples/prompts.md](examples/prompts.md). Full guide: <https://fileclerk.co.uk/developers/mcp>.
+Examples: [examples/prompts.md](examples/prompts.md). Full guide: <https://fileclerk.co.uk/docs/developers/mcp>.
 
 ## Install
 
