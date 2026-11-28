@@ -1,6 +1,6 @@
 {
   "name": "fileclerk",
-  "version": "0.5.4",
+  "version": "0.5.5",
   "description": "UK company filing deadlines, filed figures and iXBRL validation",
   "mcpServers": {
     "fileclerk": {
