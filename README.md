@@ -52,9 +52,11 @@ independent of Companies House and HMRC.
 
 ## Access and limits
 
-Every tool needs a free FileClerk account. Claude Code signs you in with OAuth the first time a tool runs: FileClerk
-asks for your passkey and for your consent. A client without OAuth sends a FileClerk API key in the `x-api-key`
-header instead. The limit is 1,000 lookups an hour per account. Sign up: <https://fileclerk.co.uk/console/sign-in>.
+The register reads need no account and no key: company search, deadlines, filed figures, related companies, the
+company checks, officers and the guides, at 60 lookups an hour. Every other tool (the calculators, alerts, the checks
+before a filing) is at `https://fileclerk.co.uk/mcp/account` and needs a free FileClerk account: a client signs you in
+with OAuth, with your passkey, or sends a FileClerk API key in the `x-api-key` header. The limit is then 1,000 lookups
+an hour. Sign up: <https://fileclerk.co.uk/console/sign-in>.
 
 ## Privacy Policy
 

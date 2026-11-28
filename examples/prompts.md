@@ -1,6 +1,6 @@
 # Example prompts
 
-Each prompt works with a free FileClerk account, signed in once with OAuth.
+The register prompts work with no account and no key. A calculator prompt needs a free FileClerk account, signed in once with OAuth at `https://fileclerk.co.uk/mcp/account`.
 
 | Prompt | Tools that answer it |
 |---|---|

@@ -3,7 +3,7 @@
   "name": "uk.co.fileclerk/filing-tools",
   "title": "FileClerk",
   "description": "UK company filing deadlines, filed figures and iXBRL validation",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "websiteUrl": "https://fileclerk.co.uk",
   "repository": {
     "url": "https://github.com/fileclerk-uk/fileclerk-plugin",
@@ -23,7 +23,7 @@
       "headers": [
         {
           "name": "x-api-key",
-          "description": "A FileClerk API key, for a client without OAuth. Every tool needs a free FileClerk account: connect with OAuth (the client signs you in) or send a key. 1,000 lookups per hour per account.",
+          "description": "Optional. The register reads at this address need no key: 60 lookups per hour. A free FileClerk API key raises that to 1,000 per hour. Every other tool is at https://fileclerk.co.uk/mcp/account, with OAuth or a key.",
           "isRequired": false,
           "isSecret": true
         }
