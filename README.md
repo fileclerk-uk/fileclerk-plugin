@@ -9,20 +9,12 @@ skill, one command, and the entry of the server in the MCP registry. The server 
 
 ## What it gives an assistant
 
-- The MCP server `fileclerk` (Streamable HTTP, `https://fileclerk.co.uk/mcp`) with its tools:
+- The MCP server `fileclerk` (Streamable HTTP, `https://fileclerk.co.uk/mcp`), free and with no key, with 9 tools:
   - register lookups: a company by name, its filing deadlines and current people with significant control, its filed
-    figures, its officers, a list of companies by filters and the link to that list as a CSV file, how the
-    companies people looked up filed their last accounts, and, among the companies on FileClerk, companies like it
+    figures, its officers, a list of companies by filters, and, among the companies on FileClerk, companies like it
     and the companies in which it has significant control;
   - checks on one company: strike-off, the 2028 software filing rule, every check in one call;
-  - calculators: first deadlines from an incorporation date, late filing penalties, Corporation Tax, s455 tax on a
-    director's loan, take-home pay, a director's salary and dividends, company size;
-  - before a filing: a check of iXBRL accounts, a dry run of annual accounts, with a PDF of them as they go to
-    Companies House on request, or a CT600, and a community interest company's accounts package (its accounts and
-    CIC34 report in one ZIP to upload at Companies House). Nothing is filed;
-  - email alerts for a company's deadlines;
-  - FileClerk's guides to filing rules and tasks, found by a question, each with its page to cite;
-  - writing to FileClerk: an error report, feedback or a question.
+  - FileClerk's guides to filing rules and tasks, found by a question, each with its page to cite.
 - The skill `check-company-filings`: how to find a company, read its deadlines and report them.
 - The command `/deadlines <company name or number>`.
 
@@ -52,20 +44,16 @@ independent of Companies House and HMRC.
 
 ## Access and limits
 
-The register reads need no account and no key: company search, deadlines, filed figures, related companies, the
-company checks, officers and the guides, at 60 lookups an hour. Every other tool (the calculators, alerts, the checks
-before a filing) is at `https://fileclerk.co.uk/mcp/account` and needs a free FileClerk account: a client signs you in
-with OAuth, with your passkey, or sends a FileClerk API key in the `x-api-key` header. The limit is then 1,000 lookups
-an hour. Sign up: <https://fileclerk.co.uk/console/sign-in>.
+The plugin's tools need no account and no key, at 60 lookups an hour. Each answer has an `account` field that says
+what a free FileClerk account adds: the calculators, deadline alerts, the checks before a filing, and 1,000 lookups an
+hour. How to sign up: <https://fileclerk.co.uk/docs/developers/mcp>.
 
 ## Privacy Policy
 
 <https://fileclerk.co.uk/legal/privacy>
 
-The server gets the inputs of a tool call: a company number or name, the figures for a calculator, the text of a
-document to check or to package, or the words of a guide search. It does not get the conversation. `follow_companies` stores the email address that the person
-gives, to send deadline alerts, until the person unsubscribes. `send_feedback` stores the message, the text and
-company number it names, and the email address when the person gives one, for 12 months, to reply.
+The server gets the inputs of a tool call: a company number or name, an officer ID, filters for a company list, or
+the words of a guide search. It does not get the conversation. The plugin's tools store nothing that a person sends.
 
 ## Data and independence
 
